@@ -1,0 +1,14 @@
+<section data-ng-controller="MessagesController" data-ng-init="getResource()">
+	<h2> Message Page </h2>
+	<table>
+		<tr data-ng-repeat="i in messages">
+			<td> {{i.msg}} </td>
+		</tr> 
+	</table>
+
+	<br> <br>
+	<textarea rows=5 cols=60 id="newBlogBody" class="form-control" data-ng-model="newBlog.body">
+		</textarea>
+		
+	<button type="submit">Save New Blog</button>
+</section>
